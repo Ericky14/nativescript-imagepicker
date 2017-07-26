@@ -4,7 +4,7 @@ import platform = require("platform");
 import ui_frame = require("ui/frame");
 import { Page } from "ui/page";
 import { ActionBar, NavigationButton, ActionItems, ActionItem } from "ui/action-bar";
-import { RadListView, ListViewGridLayout } from "nativescript-telerik-ui/listview";
+import { RadListView, ListViewGridLayout } from "nativescript-telerik-ui-pro/listview";
 
 var page;
 var list;
@@ -33,7 +33,7 @@ export function done(args) {
 }
 
 export function imagesPageFactory(): Page {
-    //<Page xmlns="http://www.nativescript.org/tns.xsd" loaded="pageLoaded" xmlns:lv="nativescript-telerik-ui/listview">
+    //<Page xmlns="http://www.nativescript.org/tns.xsd" loaded="pageLoaded" xmlns:lv="nativescript-telerik-ui-pro/listview">
     let page = new Page();
     page.on(Page.loadedEvent, pageLoaded);
     
